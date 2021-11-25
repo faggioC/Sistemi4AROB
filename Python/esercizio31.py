@@ -1,5 +1,7 @@
-s = input("Inserisci una stringa")
-if s == "".join(reversed(s)):
-    print("Palindrome")
+isPalindromo = lambda stringa: (stringa==stringa[::-1])
+
+s = input("Inserisci una stringa: ")
+if isPalindromo(s):
+    print("Palindroma")
 else:
-    print("Not Palindrome")
+    print("Non Palindroma")

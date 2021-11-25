@@ -1,14 +1,7 @@
-def isPalindromo(s):
-    if s == "".join(reversed(s)):
-        return True
-    else:
-        return False
+isPalindromo = lambda stringa: (stringa==stringa[::-1])
+isMaiuscola = lambda s: s[0].isupper()
 
-def isMaiuscolo(s):
-    return True if s[0].isupper() else False
-
-
-lista=["ciao","oppo","Cane","Muso","anna"]
+lista=["ciao","ora","Cane","oro","anna"]
 palindrome=[]
 maiuscole=[]
 
@@ -16,7 +9,7 @@ for parola in lista:
     if(isPalindromo(parola)):
         palindrome.append(parola)
     
-    if(isMaiuscolo(parola)):
+    if(isMaiuscola(parola)):
         maiuscole.append(parola)
 
 print(palindrome)
