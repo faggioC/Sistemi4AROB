@@ -1,6 +1,6 @@
 import random
 
-f = open("./esercizio42.txt", "w")
+f = open("./File/esercizio42.txt", "w")
 
 alice = [random.randint(1, 6) for n in range(10)]
 bob = [random.randint(1, 6) for n in range(10)]
