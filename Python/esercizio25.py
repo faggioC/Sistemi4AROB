@@ -8,7 +8,7 @@ def isPrimo(num):
             trovato = False
         k=k+1
     if num == 1:
-        return False
+        trovato = False
     return trovato
 
 num = int(input("Inserisci un numero: "))
